@@ -1,0 +1,13 @@
+name: Guardian — Cleanup workflow runs
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: '17 3 * * *'
+
+jobs:
+  cleanup:
+    uses: Mataiasu-Projects/Project-Guardian/.github/workflows/cleanup-workflow-runs.yml@main
+    with:
+      keep-successful: 10
+      include-skipped: true
