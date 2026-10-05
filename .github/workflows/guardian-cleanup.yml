@@ -5,6 +5,10 @@ on:
   schedule:
     - cron: '17 3 * * *'
 
+permissions:
+  actions: write
+  contents: read
+
 jobs:
   cleanup:
     uses: Mataiasu-Projects/Project-Guardian/.github/workflows/cleanup-workflow-runs.yml@main
