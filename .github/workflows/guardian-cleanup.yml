@@ -2,8 +2,7 @@ name: Guardian — Cleanup workflow runs
 
 on:
   workflow_dispatch:
-  schedule:
-    - cron: '17 3 * * *'
+  # Scheduled runs are paused until this repository is granted access to the private reusable workflow in Project-Guardian.
 
 permissions:
   actions: write
